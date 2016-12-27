@@ -16,6 +16,7 @@ const ServiceCoreSchema = new Schema({
     nurse_period: { type: Number, required: true },             //看护时间
     modules: [{ type: Schema.ObjectId, ref: 'NurseModule' }],   //检测项  看护模块
     description: { type: String },                              //服务描述
+    status: { type: String, default: '0' },
     create_at: { type: Date, default: Date.now },               //创建时间
     update_at: { type: Date, default: Date.now }                //修改时间
 });
