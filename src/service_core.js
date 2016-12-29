@@ -23,5 +23,4 @@ const ServiceCoreSchema = new Schema({
     update_at: { type: Date, default: Date.now }                          //修改时间
 });
 
-
 module.exports = ServiceCoreSchema;
