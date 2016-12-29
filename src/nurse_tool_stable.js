@@ -13,13 +13,15 @@ const Schema = mongoose.Schema;
 const NurseToolStableSchema = new Schema({
     service: { type: Schema.ObjectId, ref: '_Service' },                                    //隶属service
     module: { type: Schema.ObjectId, ref: '_NurseModule' },                                 //隶属module
-    condition: {                                                                            //加测条件
+    //加测条件
+    condition: {
         count: { type: Number },                                                            //检测次数
         state: { type: String }                                                             //检测状态
     },
     days: { type: Number },                                                                 //加测天数
     testTime: [{ type: String }],                                                           //加测每天测量次数
-    warnings: {                                                                             //加测警告
+    //加测警告
+    warnings: {
         count: { type: Number },                                                            //检测次数
         state: { type: String }                                                             //检测状态
     },
