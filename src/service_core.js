@@ -1,6 +1,6 @@
 /**
  *@author xyx   <kwin.xu@semioe.com>
- *        date: 2016.12.26
+ *        date: 2016.12.28
  *@description 服务基本信息及其内容
  */
 /* jshint ignore: start */
