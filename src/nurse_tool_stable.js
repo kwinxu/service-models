@@ -1,7 +1,7 @@
 /**
  *@author xyx <kwin.xu@semioe.com>
  *        date: 2016.12.29
- *@description 高级看护工具-稳定器看护工具
+ *@description 高级看护-稳定器看护工具
  */
 /* jshint ignore:start */
 'use strict';
@@ -11,7 +11,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const NurseToolStableSchema = new Schema({
-    service: { type: Schema.ObjectId, ref: 'NService' },                                    //service
+    service: { type: Schema.ObjectId, ref: '_Service' },                                    //隶属service
+    module: { type: Schema.ObjectId, ref: '_NurseModule' },                                 //隶属module
     condition: {                                                                            //加测条件
         count: { type: Number },                                                            //检测次数
         state: { type: String }                                                             //检测状态
