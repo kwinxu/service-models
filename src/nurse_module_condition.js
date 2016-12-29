@@ -10,7 +10,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const NurseModuleUnitCondition = new Schema({
+const NurseModuleCondition = new Schema({
     type: { type: String, enum: ['default', 'service'] },                       //当前模块是否属于某个服务
     service: { type: Schema.ObjectId, ref: '_Service' },                        //service
     module_unit: { type: Schema.ObjectId, ref: 'ModuleUnit' },                  //隶属模块组件
@@ -22,4 +22,4 @@ const NurseModuleUnitCondition = new Schema({
     update_at: { type: Date, default: Date.now }                                //修改时间
 });
 
-module.exports = NurseModuleUnitCondition;
+module.exports = NurseModuleCondition;
