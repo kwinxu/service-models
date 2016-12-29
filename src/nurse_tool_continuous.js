@@ -1,5 +1,5 @@
 /**
- *@author xyx <kwin.xu@semioe.com>
+ *@author xyx   <kwin.xu@semioe.com>
  *        date: 2016.12.29
  *@description 高级看护-连续看护工具
  */

@@ -15,8 +15,8 @@ const ModuleUnitSchema = new Schema({
     label: { type: String, required: true },                                            //显示名称
     description: { type: String },                                                      //描述
     conditions: [{ type: Schema.ObjectId, ref: '_Condition' }],                         //条件
-    results: { type: Array, required: true },                                           //结果
-    unit: { type: String, required: true },                                             //单位
+    results: { type: Array },                                                           //结果
+    unit: { type: String },                                                             //单位
     module: { type: Schema.ObjectId, ref: 'Module' },                                   //隶属模块
     service: { type: Schema.ObjectId, ref: '_Service' },                                //隶属服务
     create_at: { type: Date, default: Date.now },                                       //创建时间
