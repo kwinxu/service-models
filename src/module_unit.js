@@ -17,6 +17,8 @@ const ModuleUnitSchema = new Schema({
     conditions: [{ type: Schema.ObjectId, ref: '_Condition' }],     //条件
     results: { type: Array, required: true },                       //结果
     unit: { type: String, required: true },                         //单位
+    module: { type: Schema.ObjectId, ref: '_NurseModule' },         //隶属模块
+    service: { type: Schema.ObjectId, ref: '_Service' },            //隶属服务
     create_at: { type: Date, default: Date.now },                   //创建时间
     update_at: { type: Date, default: Date.now }                    //修改时间
 });

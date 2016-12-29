@@ -13,7 +13,6 @@ const Schema = mongoose.Schema;
 const NurseModuleSchema = new Schema({
     key: { type: String, required: true },                                              //key
     label: { type: String, required: true },                                            //显示名称
-    units: { type: Schema.ObjectId, ref: 'Unit' },                                      //模块组件
     nurse_tool_continuous: [{ type: Schema.ObjectId, ref: 'NurseToolContinuous' }],     //连续高级看护工具
     nurse_tool_stable: [{ type: Schema.ObjectId, ref: 'NurseToolStable' }],             //稳定期看护工具
     description: { type: String },                                                      //检测项木块介绍
