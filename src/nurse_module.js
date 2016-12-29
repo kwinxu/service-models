@@ -13,6 +13,7 @@ const Schema = mongoose.Schema;
 const NurseModuleSchema = new Schema({
     key: { type: String, required: true },                                              //key
     label: { type: String, required: true },                                            //显示名称
+    type: { type: String, enum: ['nurse','remind'] },
     description: { type: String },                                                      //检测项木块介绍
     create_at: { type: Date, default: Date.now },                                       //创建时间
     update_at: { type: Date, default: Date.now }                                        //修改时间
