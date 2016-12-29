@@ -1,7 +1,7 @@
 /**
  *@author xyx   <kwin.xu@semioe.com>
  *        date: 2016.12.29
- *@description 
+ *@description 提醒-高级服药
  */
 /* jshint ignore:start */
 'use strict';
